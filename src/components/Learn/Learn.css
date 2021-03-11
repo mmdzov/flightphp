@@ -1,0 +1,57 @@
+.Learn {
+  display: flex;
+}
+.Learn .menu {
+  width: 30%;
+}
+.Learn .menu > ul {
+  list-style: none;
+  border-right: 1px solid #eee;
+  padding: 0px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  line-height: 26px;
+  font-size: 14px;
+}
+.Learn .menu > ul > li {
+  transition: all 0.2s ease-in-out;
+}
+.Learn .menu > ul > li:hover {
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.Learn .content {
+  width: 100%;
+}
+.mdContainer {
+  width: 90%;
+}
+@media screen and (max-width: 1050px) {
+  .Learn .menu {
+    width: 220px;
+  }
+  .mdContainer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mdContainer {
+    width: 64%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .Flightphp {
+    margin: 0 !important;
+    padding: 0;
+  }
+  .mdContainer {
+    width: 100%;
+  }
+  .Learn {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

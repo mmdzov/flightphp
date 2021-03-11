@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header .title {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 3.5rem;
+}
+.header .content {
+  font-size: 13px;
+  margin-top: 5px;
+}
