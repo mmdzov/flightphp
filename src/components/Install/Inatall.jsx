@@ -16,7 +16,7 @@ const Install = () => {
         children={state.md}
         options={{
           overrides: {
-            pre: {
+            code: {
               component: SimpleCode,
             },
           },

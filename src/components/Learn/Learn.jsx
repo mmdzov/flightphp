@@ -1,7 +1,6 @@
 import Markdown from "markdown-to-jsx";
 import { useEffect, useState } from "react";
 import MenuMd from "../../md/menu.md";
-import CheckLinks from "../CheckLinks/CheckLinks";
 import SimpleCode from "../Simple-code/Simple-code";
 import "./Learn.css";
 
@@ -45,9 +44,6 @@ const Learn = () => {
             overrides: {
               code: {
                 component: SimpleCode,
-              },
-              a: {
-                // component: CheckLinks,
               },
             },
           }}

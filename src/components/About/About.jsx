@@ -1,4 +1,3 @@
-// import marked from "marked";
 import Markdown from "markdown-to-jsx";
 import AboutMd from "../../md/about.md";
 import { useEffect, useState } from "react";
@@ -16,11 +15,8 @@ const About = () => {
         children={state.md}
         options={{
           overrides: {
-            pre: {
+            code: {
               component: SimpleCode,
-              props: {
-                className: "SimpleCode",
-              },
             },
           },
         }}
