@@ -3,9 +3,11 @@ import Flightphp from "./Flightphp";
 import "./App.css";
 const App = () => {
   return (
-    <Router>
-      <Flightphp />
-    </Router>
+    <div className=''>
+      <Router>
+        <Flightphp />
+      </Router>
+    </div>
   );
 };
 

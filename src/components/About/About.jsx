@@ -2,12 +2,11 @@ import Markdown from "markdown-to-jsx";
 import AboutMd from "../../md/about.md";
 import { useEffect, useState } from "react";
 import SimpleCode from "../Simple-code/Simple-code";
+import { mdSchemaState, setMd } from "../../utility/importMd";
 const About = () => {
-  const [state, setState] = useState({ md: "" });
+  const [state, setState] = useState(mdSchemaState);
   useEffect(() => {
-    fetch(AboutMd)
-      .then((res) => res.text())
-      .then((md) => setState({ md }));
+    setMd(AboutMd, setState);
   }, []);
   return (
     <div className='About'>

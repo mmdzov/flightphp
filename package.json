@@ -11,7 +11,6 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap-v4-rtl": "^4.6.0-1",
     "markdown-to-jsx": "^7.1.2",
-    "marked": "^2.0.1",
     "monaco-editor": "^0.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -1,14 +1,13 @@
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "./Simple-code.css";
-const SimpleCode = ({ children, props }) => {
-  if (children.length < 20) return <div className=''>{children}</div>;
+const SimpleCode = ({ children }) => {
   return (
-    <div className='SimpleCode'>
+    <span className='SimpleCode'>
       <SyntaxHighlighter showLineNumbers language='php' style={atomOneDark}>
         {children}
       </SyntaxHighlighter>
-    </div>
+    </span>
   );
 };
 
